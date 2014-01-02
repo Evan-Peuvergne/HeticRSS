@@ -460,6 +460,7 @@
 				8D0886C2187630F500D9A760 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8D0886C3187630F500D9A760 /* Build configuration list for PBXNativeTarget "HeticRSSTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +469,7 @@
 				8D0886C5187630F500D9A760 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
