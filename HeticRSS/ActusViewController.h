@@ -10,6 +10,6 @@
 
 @interface ActusViewController : UITableViewController
 
-@property NSDictionary* flux;
+@property NSArray* flux;
 
 @end

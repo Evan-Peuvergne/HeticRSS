@@ -38,8 +38,7 @@
     NSError* erreur = nil;
     NSData* donnees = [NSURLConnection sendSynchronousRequest:request returningResponse:&reponse error:&erreur];
     
-    self.flux = [NSDictionary dictionaryWithXMLData:donnees];
-    NSLog(@"%@", self.flux);
+    self.flux = (NSArray*)[[[NSDictionary dictionaryWithXMLData:donnees] valueForKey:@"channel"] valueForKey:@"item"];
     
 }
 
@@ -66,7 +65,9 @@
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    cell.textLabel.text = @"slt les amis";
+    NSDictionary* elem = (NSDictionary*) [self.flux objectAtIndex:[indexPath item]];
+    NSString* title = [elem valueForKey:@"title"];
+    cell.textLabel.text = title;
     
     return cell;
 }
