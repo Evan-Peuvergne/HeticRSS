@@ -14,13 +14,14 @@
 		8D08869E187630F500D9A760 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D08869D187630F500D9A760 /* main.m */; };
 		8D0886A2187630F500D9A760 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0886A1187630F500D9A760 /* AppDelegate.m */; };
 		8D0886A5187630F500D9A760 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D0886A3187630F500D9A760 /* Main.storyboard */; };
-		8D0886A8187630F500D9A760 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0886A7187630F500D9A760 /* ViewController.m */; };
 		8D0886AA187630F500D9A760 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D0886A9187630F500D9A760 /* Images.xcassets */; };
 		8D0886B1187630F500D9A760 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D0886B0187630F500D9A760 /* XCTest.framework */; };
 		8D0886B2187630F500D9A760 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D088691187630F500D9A760 /* Foundation.framework */; };
 		8D0886B3187630F500D9A760 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D088695187630F500D9A760 /* UIKit.framework */; };
 		8D0886BB187630F500D9A760 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D0886B9187630F500D9A760 /* InfoPlist.strings */; };
 		8D0886BD187630F500D9A760 /* HeticRSSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0886BC187630F500D9A760 /* HeticRSSTests.m */; };
+		8D0886C81876347800D9A760 /* ActusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0886C71876347800D9A760 /* ActusViewController.m */; };
+		8D0886CB187634D800D9A760 /* ActuDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0886CA187634D800D9A760 /* ActuDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +46,16 @@
 		8D0886A0187630F500D9A760 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8D0886A1187630F500D9A760 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		8D0886A4187630F500D9A760 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8D0886A6187630F500D9A760 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8D0886A7187630F500D9A760 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8D0886A9187630F500D9A760 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8D0886AF187630F500D9A760 /* HeticRSSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeticRSSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D0886B0187630F500D9A760 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		8D0886B8187630F500D9A760 /* HeticRSSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HeticRSSTests-Info.plist"; sourceTree = "<group>"; };
 		8D0886BA187630F500D9A760 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8D0886BC187630F500D9A760 /* HeticRSSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeticRSSTests.m; sourceTree = "<group>"; };
+		8D0886C61876347800D9A760 /* ActusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActusViewController.h; sourceTree = "<group>"; };
+		8D0886C71876347800D9A760 /* ActusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActusViewController.m; sourceTree = "<group>"; };
+		8D0886C9187634D800D9A760 /* ActuDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActuDetailViewController.h; sourceTree = "<group>"; };
+		8D0886CA187634D800D9A760 /* ActuDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActuDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,10 +118,12 @@
 				8D0886A0187630F500D9A760 /* AppDelegate.h */,
 				8D0886A1187630F500D9A760 /* AppDelegate.m */,
 				8D0886A3187630F500D9A760 /* Main.storyboard */,
-				8D0886A6187630F500D9A760 /* ViewController.h */,
-				8D0886A7187630F500D9A760 /* ViewController.m */,
 				8D0886A9187630F500D9A760 /* Images.xcassets */,
 				8D088698187630F500D9A760 /* Supporting Files */,
+				8D0886C61876347800D9A760 /* ActusViewController.h */,
+				8D0886C71876347800D9A760 /* ActusViewController.m */,
+				8D0886C9187634D800D9A760 /* ActuDetailViewController.h */,
+				8D0886CA187634D800D9A760 /* ActuDetailViewController.m */,
 			);
 			path = HeticRSS;
 			sourceTree = "<group>";
@@ -249,7 +254,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D0886A8187630F500D9A760 /* ViewController.m in Sources */,
+				8D0886CB187634D800D9A760 /* ActuDetailViewController.m in Sources */,
+				8D0886C81876347800D9A760 /* ActusViewController.m in Sources */,
 				8D0886A2187630F500D9A760 /* AppDelegate.m in Sources */,
 				8D08869E187630F500D9A760 /* main.m in Sources */,
 			);

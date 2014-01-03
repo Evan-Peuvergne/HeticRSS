@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ActusViewController.h
 //  HeticRSS
 //
 //  Created by evan peuvergne on 03/01/2014.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ActusViewController : UITableViewController
 
 @end
