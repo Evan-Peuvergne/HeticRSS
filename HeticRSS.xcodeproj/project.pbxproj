@@ -22,6 +22,7 @@
 		8D0886BD187630F500D9A760 /* HeticRSSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0886BC187630F500D9A760 /* HeticRSSTests.m */; };
 		8D0886C81876347800D9A760 /* ActusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0886C71876347800D9A760 /* ActusViewController.m */; };
 		8D0886CB187634D800D9A760 /* ActuDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0886CA187634D800D9A760 /* ActuDetailViewController.m */; };
+		8D944CAA1876DFC30052AE4D /* XMLDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D944CA91876DFC30052AE4D /* XMLDictionary.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		8D0886C71876347800D9A760 /* ActusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActusViewController.m; sourceTree = "<group>"; };
 		8D0886C9187634D800D9A760 /* ActuDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActuDetailViewController.h; sourceTree = "<group>"; };
 		8D0886CA187634D800D9A760 /* ActuDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActuDetailViewController.m; sourceTree = "<group>"; };
+		8D944CA81876DFC30052AE4D /* XMLDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLDictionary.h; sourceTree = "<group>"; };
+		8D944CA91876DFC30052AE4D /* XMLDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLDictionary.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 			children = (
 				8D0886A0187630F500D9A760 /* AppDelegate.h */,
 				8D0886A1187630F500D9A760 /* AppDelegate.m */,
+				8D944CA81876DFC30052AE4D /* XMLDictionary.h */,
+				8D944CA91876DFC30052AE4D /* XMLDictionary.m */,
 				8D0886A3187630F500D9A760 /* Main.storyboard */,
 				8D0886A9187630F500D9A760 /* Images.xcassets */,
 				8D088698187630F500D9A760 /* Supporting Files */,
@@ -254,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D944CAA1876DFC30052AE4D /* XMLDictionary.m in Sources */,
 				8D0886CB187634D800D9A760 /* ActuDetailViewController.m in Sources */,
 				8D0886C81876347800D9A760 /* ActusViewController.m in Sources */,
 				8D0886A2187630F500D9A760 /* AppDelegate.m in Sources */,

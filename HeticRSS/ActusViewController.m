@@ -7,6 +7,7 @@
 //
 
 #import "ActusViewController.h"
+#import "XMLDictionary.h"
 
 @interface ActusViewController ()
 
@@ -27,7 +28,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.flux = [[NSDictionary alloc] initWithObjectsAndKeys:@"content 1", @"titre 1", @"contenu 2", @"titre 2", @"contenu 3", @"titre 3", nil];
+    
+    //Requete de récupération du flux RSS
+    NSString* url = @"http://feeds.feedburner.com/hetic?format=xml";
+    NSURLRequest* request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:url]];
+    
+    //Gestion de la réponse
+    NSURLResponse* reponse = nil;
+    NSError* erreur = nil;
+    NSData* donnees = [NSURLConnection sendSynchronousRequest:request returningResponse:&reponse error:&erreur];
+    
+    self.flux = [NSDictionary dictionaryWithXMLData:donnees];
     NSLog(@"%@", self.flux);
     
 }
