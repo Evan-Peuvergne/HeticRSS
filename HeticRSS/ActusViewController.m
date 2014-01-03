@@ -18,7 +18,8 @@
 {
     self = [super initWithStyle:style];
     if (self) {
-        // Custom initialization
+        
+        
     }
     return self;
 }
@@ -26,8 +27,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-    NSLog(@"hello world");
+    self.flux = [[NSDictionary alloc] initWithObjectsAndKeys:@"content 1", @"titre 1", @"contenu 2", @"titre 2", @"contenu 3", @"titre 3", nil];
+    NSLog(@"%@", self.flux);
     
 }
 
@@ -46,7 +47,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 3;
+    return [self.flux count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -54,7 +55,7 @@
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    // Configure the cell...
+    cell.textLabel.text = @"slt les amis";
     
     return cell;
 }
