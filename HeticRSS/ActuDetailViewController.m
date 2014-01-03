@@ -26,7 +26,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+	self.actuTitre.text = @"slt les amis";
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -35,4 +36,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)actuSuivante:(id)sender {
+    
+    self.actuTitre.text = @"vous avez clické";
+    
+}
 @end

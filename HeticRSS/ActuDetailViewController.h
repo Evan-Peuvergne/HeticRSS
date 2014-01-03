@@ -10,4 +10,10 @@
 
 @interface ActuDetailViewController : UIViewController
 
+
+@property (weak, nonatomic) IBOutlet UILabel *actuTitre;
+@property (weak, nonatomic) IBOutlet UITextView *actuContent;
+
+- (IBAction)actuSuivante:(id)sender;
+
 @end
