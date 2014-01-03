@@ -8,6 +8,7 @@
 
 #import "ActusViewController.h"
 #import "XMLDictionary.h"
+#import "ActuDetailViewController.h"
 
 @interface ActusViewController ()
 
@@ -29,6 +30,12 @@
 {
     [super viewDidLoad];
     
+    //Mise en place d'un loader
+    UIActivityIndicatorView *spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+    spinner.center = CGPointMake((self.view.frame.size.width/2) - (spinner.frame.size.width/2), (self.view.frame.size.height/2) - (spinner.frame.size.height/2));
+    [self.view addSubview:spinner];
+    [spinner startAnimating];
+    
     //Requete de récupération du flux RSS
     NSString* url = @"http://feeds.feedburner.com/hetic?format=xml";
     NSURLRequest* request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:url]];
@@ -39,6 +46,8 @@
     NSData* donnees = [NSURLConnection sendSynchronousRequest:request returningResponse:&reponse error:&erreur];
     
     self.flux = (NSArray*)[[[NSDictionary dictionaryWithXMLData:donnees] valueForKey:@"channel"] valueForKey:@"item"];
+    
+    [spinner stopAnimating];
     
 }
 
@@ -73,6 +82,16 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return (CGFloat)100;
+}
+
+//Gestion du transfert du contenu
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    
+    ActuDetailViewController* controller = (ActuDetailViewController*)segue.destinationViewController;
+    controller.flux = self.flux;
+    controller.index = self.tableView.indexPathForSelectedRow.item;
+    
 }
 
 

@@ -71,15 +71,6 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cyw-Mz-Tvl">
-                                <rect key="frame" x="20" y="185" width="280" height="313"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. balcnjfvbvbbfhvbhfbvfbhfhbvbfvbfvbbfhfhfhfhfhf fhfrfffbhfbfbrbbbfbfbfhrhrhrhrhrhrhrLorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. balcnjfvbvbbfhvbhfbvfbhfhbvbfvbfvbbfhfhfhfhfhf fhfrfffbhfbfbrbbbfbfbfhrhrhrhrhrhrhr</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
-                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pQ4-7m-K79">
                                 <rect key="frame" x="114" y="518" width="93" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -90,24 +81,29 @@
                                     <action selector="actuSuivante:" destination="aEM-ip-SZe" eventType="touchUpInside" id="0Hf-ey-hhP"/>
                                 </connections>
                             </button>
+                            <webView contentMode="scaleToFill" allowsInlineMediaPlayback="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gtQ-K6-ozk">
+                                <rect key="frame" x="20" y="178" width="280" height="332"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="cyw-Mz-Tvl" firstAttribute="top" secondItem="cXg-HA-Mnu" secondAttribute="bottom" constant="21" id="CHp-jQ-Mye"/>
-                            <constraint firstItem="pQ4-7m-K79" firstAttribute="top" secondItem="cyw-Mz-Tvl" secondAttribute="bottom" constant="20" id="OdK-9E-kfn"/>
+                            <constraint firstAttribute="trailing" secondItem="gtQ-K6-ozk" secondAttribute="trailing" constant="20" id="B2G-Oi-P94"/>
+                            <constraint firstItem="gtQ-K6-ozk" firstAttribute="leading" secondItem="rCH-il-Rz8" secondAttribute="leading" constant="20" id="H0j-aq-EDw"/>
+                            <constraint firstItem="gtQ-K6-ozk" firstAttribute="top" secondItem="cXg-HA-Mnu" secondAttribute="bottom" constant="14" id="HwS-qi-nRV"/>
+                            <constraint firstItem="pQ4-7m-K79" firstAttribute="top" secondItem="gtQ-K6-ozk" secondAttribute="bottom" constant="8" id="Jmd-23-haH"/>
                             <constraint firstItem="cXg-HA-Mnu" firstAttribute="top" secondItem="rCH-il-Rz8" secondAttribute="top" constant="87" id="VRr-0j-QPJ"/>
                             <constraint firstItem="cXg-HA-Mnu" firstAttribute="leading" secondItem="rCH-il-Rz8" secondAttribute="leading" constant="20" id="W1e-5k-KXK"/>
-                            <constraint firstItem="cyw-Mz-Tvl" firstAttribute="leading" secondItem="rCH-il-Rz8" secondAttribute="leading" constant="20" id="cUe-Qd-oAR"/>
                             <constraint firstAttribute="trailing" secondItem="cXg-HA-Mnu" secondAttribute="trailing" constant="20" id="ecA-4d-ZrE"/>
                             <constraint firstAttribute="centerX" secondItem="pQ4-7m-K79" secondAttribute="centerX" id="lyi-6k-0G9"/>
                             <constraint firstAttribute="bottom" secondItem="pQ4-7m-K79" secondAttribute="bottom" constant="20" id="skr-1b-yFE"/>
-                            <constraint firstItem="cyw-Mz-Tvl" firstAttribute="width" secondItem="cXg-HA-Mnu" secondAttribute="width" id="yo9-Fh-qqT"/>
-                            <constraint firstAttribute="trailing" secondItem="cyw-Mz-Tvl" secondAttribute="trailing" constant="20" id="zOU-7g-1fs"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Titre de l'actu" id="rrU-jp-EG2"/>
                     <connections>
-                        <outlet property="actuContent" destination="cyw-Mz-Tvl" id="mcS-93-5sk"/>
+                        <outlet property="actuContent" destination="gtQ-K6-ozk" id="yfp-Ku-ZZm"/>
                         <outlet property="actuTitre" destination="cXg-HA-Mnu" id="EwS-ym-aSj"/>
                     </connections>
                 </viewController>

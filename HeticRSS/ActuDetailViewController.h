@@ -10,9 +10,11 @@
 
 @interface ActuDetailViewController : UIViewController
 
+@property NSArray* flux;
+@property int index;
 
 @property (weak, nonatomic) IBOutlet UILabel *actuTitre;
-@property (weak, nonatomic) IBOutlet UITextView *actuContent;
+@property (weak, nonatomic) IBOutlet UIWebView *actuContent;
 
 - (IBAction)actuSuivante:(id)sender;
 

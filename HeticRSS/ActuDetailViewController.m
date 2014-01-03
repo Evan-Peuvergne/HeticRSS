@@ -26,7 +26,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	self.actuTitre.text = @"slt les amis";
+    
+    NSDictionary* elem = (NSDictionary*)[self.flux objectAtIndex:self.index];
+    
+    self.actuTitre.text = [elem valueForKey:@"title"];
+    
+    [self.actuContent loadHTMLString:[elem valueForKey:@"description"] baseURL:nil];
     
 }
 
@@ -38,7 +43,8 @@
 
 - (IBAction)actuSuivante:(id)sender {
     
-    self.actuTitre.text = @"vous avez clické";
+    
     
 }
+
 @end
