@@ -43,7 +43,8 @@
 
 - (IBAction)actuSuivante:(id)sender {
     
-    
+    self.index++;
+    [self viewDidLoad];
     
 }
 
