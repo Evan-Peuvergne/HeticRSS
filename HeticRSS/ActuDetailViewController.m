@@ -43,7 +43,11 @@
 
 - (IBAction)actuSuivante:(id)sender {
     
-    self.index++;
+    if(self.index == [self.flux count] - 1){
+        self.index = 0;
+    }else{
+        self.index++;
+    }
     [self viewDidLoad];
     
 }
